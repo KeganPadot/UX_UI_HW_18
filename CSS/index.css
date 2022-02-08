@@ -1,0 +1,58 @@
+body {
+    background-color: rgba(175, 162, 136, 0.233);
+    font-family: 'Rubik', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #C8A2C8;
+}
+
+.logo {
+    padding: 1%;
+    width: 23%;
+    text-align: center;
+}
+
+nav {
+    padding: 1%;
+    width: 73%;
+}
+
+ul {
+    margin-left: auto;
+    width: 50%;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+    display: flex;
+}
+
+.content {
+    vertical-align: top;
+    justify-content: space-evenly;
+}
+
+.content {
+    margin: 0 auto;
+    width: 500px;
+}
+
+footer {
+    background-color: #C8A2C8;
+    padding: 5px;
+}
+
+footer ul {
+    display: flex;
+    vertical-align: top;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
