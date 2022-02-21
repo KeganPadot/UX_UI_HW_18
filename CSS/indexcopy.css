@@ -1,0 +1,145 @@
+body {
+    background-color: rgba(175, 162, 136, 0.233);
+    font-family: 'Rubik', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.sectionName {
+    display: block;
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #C8A2C8;
+}
+
+.logo {
+    padding: 1%;
+    width: 23%;
+    text-align: center;
+}
+
+nav {
+    padding: 1%;
+    width: 73%;
+}
+
+ul {
+    margin-left: auto;
+    width: 50%;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+    display: flex;
+}
+
+.content {
+    vertical-align: top;
+    justify-content: space-evenly;
+}
+
+.content {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.flexContainer img {
+    height: 30%;
+    width: 40%;
+}
+
+.mySkills {
+    width:33%;
+    outline: 1px black solid;
+    height: 300px;
+    width: 275px;
+}
+
+.designSkills {
+    margin: 15px;
+    padding: 3%;
+}
+
+.softSkills {
+    margin: 15px;
+    padding: 3%;
+}
+
+.technicalSkills {
+    margin: 15px;
+    padding: 3%;
+}
+
+.projectImg1 {
+    grid-area: projectImg1;
+}
+
+.projectImg1 .projectImg2 img {
+    height: 50%;
+    width: 50%;
+}
+
+.projectText1 {
+    grid-area: projectText1
+}
+
+.projectImg2 {
+    grid-area: projectImg2;
+}
+
+.projectText2 {
+    grid-area: projectText2
+}
+
+.workGrid {
+    display: grid;
+    grid-template-areas: 
+    "projectImg1 projectText1"
+    "projectImg2 projectText2";
+    grid-template-columns: 33% 66%;
+}
+
+footer {
+    background-color: #C8A2C8;
+    padding: 5px;
+}
+
+footer ul {
+    display: flex;
+    vertical-align: top;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width:600){
+    .flexContainer {
+        flex-direction: column;
+    }
+    .mySkills {
+        width: 100%;
+    }
+    .workGrid {
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "projectImg1"
+        "projectText1"
+        "projectImg2"
+        "projectText2"
+        ;
+    }
+}

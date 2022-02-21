@@ -1,131 +1,124 @@
-body {
-    background-color: rgba(175, 162, 136, 0.233);
+  body {
+    margin: 0;
     font-family: 'Rubik', sans-serif;
-}
-
-h1, h2, h3, h4 {
+  }
+  h1, h2, h3, h4 {
     font-family: 'Raleway', sans-serif;
 }
-
-.sectionName {
-    display: block;
-    text-align: center;
-}
-
-.inline-block {
+  header {
+    background-color: #373738;
+    padding: 15px;
+  }
+   header ul {
+    float: right;
+    color: white;
+  }
+  header li {
     display: inline-block;
-    vertical-align: top;
+    padding: 0px 5px;
+  }
+  header p {
+    display: inline-block;
+  }
+  .heroImg {
     background-color: #C8A2C8;
-}
-
-.logo {
-    padding: 1%;
-    width: 23%;
-    text-align: center;
-}
-
-nav {
-    padding: 1%;
-    width: 73%;
-}
-
-ul {
-    margin-left: auto;
-    width: 50%;
-}
-
-.heroImg {
-    height: 600px;
-    padding: 25px;
-    display: flex;
-}
-
-.content {
-    vertical-align: top;
-    justify-content: space-evenly;
-}
-
-.content {
+    padding: 100px 15px;
+  }
+  #selfPortrait {
+      max-width: 100%;
+      max-height: 100%;
+  }
+  .content {
+    max-width: 300px;
     margin: 0 auto;
-    width: 500px;
-}
-
-.flexContainer {
+    padding: 50px;
+    background-color: rgba(207, 186, 144, 0.233);
+    text-align: center;
+  }
+  button {
+    padding: 15px;
+    background-color: #373738;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  #mySkillsHeading {
+    background-color: rgba(207, 186, 144, 0.233);
+  }
+  footer {
+    background-color: #373738;
+    padding: 5px;
+    color: white;
+  }
+  footer ul {
+    list-style: none;
+    padding-left: 5px;
+  }
+  footer li {
+    display: inline-block;
+    padding: 0px 7px;
+  }
+  .heading {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+  }
+  
+  .flexContainer {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
-}
-
-.flexContainer img {
-    height: 30%;
-    width: 40%;
-}
-
-.mySkills {
-    width:33%;
-    outline: 1px black solid;
-    height: 300px;
-    width: 275px;
-}
-
-.designSkills {
-    margin: 15px;
-    padding: 3%;
-}
-
-.softSkills {
-    margin: 15px;
-    padding: 3%;
-}
-
-.technicalSkills {
-    margin: 15px;
-    padding: 3%;
-}
-
-.projectImg1 {
-    grid-area: projectImg1;
-}
-
-.projectImg1 .projectImg2 img {
+    padding: 60px 30px;
+    background-color: rgba(207, 186, 144, 0.233);
+  }
+  .flexContainer div {
+    width: 33%;
+    padding: 25px;
+  }
+ .flexContainer img {
+     height: 30%;
+     width: 40%;
+ }
+  .myWork {
+    padding: 60px 30px;
+    padding-top: 0;
+    background-color: #C8A2C8;
+  }
+  .workGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px;
+    grid-template-areas:
+    "img1 content1"
+    "img2 content2"
+    ;
+  }
+  .workGrid img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+  .img1 {
+    grid-area: img1;
     height: 50%;
     width: 50%;
-}
+  }
+  .img2 {
+    grid-area: img2;
+    height: 50%;
+    width: 50%;
+  }
+  
+  .img1, .img2, .content1, .content2 {
+    padding: 80px;
+  }
+  .content1 {
+    grid-area: content1;
+  }
+  .content2 {
+    grid-area: content2;
+  }
 
-.projectText1 {
-    grid-area: projectText1
-}
-
-.projectImg2 {
-    grid-area: projectImg2;
-}
-
-.projectText2 {
-    grid-area: projectText2
-}
-
-.workGrid {
-    display: grid;
-    grid-template-areas: 
-    "projectImg1 projectText1"
-    "projectImg2 projectText2";
-    grid-template-columns: 33% 66%;
-}
-
-footer {
-    background-color: #C8A2C8;
-    padding: 5px;
-}
-
-footer ul {
-    display: flex;
-    vertical-align: top;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
-
-@media only screen and (max-width:600){
+  @media only screen and (max-width:600){
     .flexContainer {
         flex-direction: column;
     }
@@ -136,10 +129,10 @@ footer ul {
         grid-template-rows: 100px 100px 100px 100px;
         grid-template-columns: 1fr;
         grid-template-areas: 
-        "projectImg1"
-        "projectText1"
-        "projectImg2"
-        "projectText2"
+        "img1"
+        "content1"
+        "img2"
+        "content2"
         ;
     }
-}
+}  
